@@ -36,6 +36,30 @@
             color: #2d3748;
         }
 
+        .welcome-box {
+            max-width: 600px;
+            margin: 2rem auto;
+            padding: 2rem;
+            background-color: #f8fafc;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            text-align: left;
+            border: 1px solid #e2e8f0;
+        }
+
+        .welcome-box p {
+            margin: 0;
+            color: #4a5568;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+
+        .welcome-box p:first-child {
+            margin-bottom: 1rem;
+            color: #2d3748;
+            font-weight: 500;
+        }
+
         .links {
             margin: 2rem 0;
         }
@@ -76,10 +100,15 @@
     <div class="container">
         <img src="profile.jpg" alt="Jannis Büscher" class="profile-image">
         <h1>Jannis Büscher</h1>
-        
+
+        <div class="welcome-box">
+            <p>I’m Jannis, a computer science researcher interested in reverse-engineering intelligence. For my personal beliefs, please read my (occasional) writing. There is also a collection of past projects that I have done. If you are interested, please reach out to me!</p>
+        </div>
+
         <div class="links">
             <a href="https://www.linkedin.com/in/jannis-b%C3%BCscher-a92485348/" target="_blank">LinkedIn</a>
             <a href="https://equithoughts.substack.com/" target="_blank">Substack</a>
+            <a href="#" onclick="window.location.href = 'mailto:' + ['jbuescher.university', 'gmail.com'].join('@'); return false;">Email</a>
         </div>
 
         <a href="projects.html" class="projects-link">Past Projects</a>
