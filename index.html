@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jannis Büscher</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <style>
         body {
             font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
@@ -65,7 +66,8 @@
         }
 
         .links a {
-            display: inline-block;
+            display: inline-flex;
+            align-items: center;
             margin: 0.5rem;
             padding: 0.5rem 1rem;
             text-decoration: none;
@@ -73,6 +75,11 @@
             border: 1px solid #e2e8f0;
             border-radius: 5px;
             transition: all 0.3s ease;
+        }
+
+        .links a i {
+            margin-right: 0.5rem;
+            font-size: 1.1rem;
         }
 
         .links a:hover {
@@ -102,13 +109,13 @@
         <h1>Jannis Büscher</h1>
 
         <div class="welcome-box">
-            <p>I’m Jannis, a computer science researcher interested in reverse-engineering intelligence. For my personal beliefs, please read my (occasional) writing. There is also a collection of past projects that I have completed. If you are interested, please reach out to me!</p>
+            <p>I'm Jannis, a computer science researcher interested in reverse-engineering intelligence. For my personal beliefs, please read my (occasional) writing. There is also a collection of past projects that I have completed. If you are interested, please reach out to me!</p>
         </div>
 
         <div class="links">
-            <a href="https://www.linkedin.com/in/jannis-b%C3%BCscher-a92485348/" target="_blank">LinkedIn</a>
-            <a href="https://equithoughts.substack.com/" target="_blank">Substack</a>
-            <a href="#" onclick="window.location.href = 'mailto:' + ['jbuescher.university', 'gmail.com'].join('@'); return false;">Email</a>
+            <a href="https://www.linkedin.com/in/jannis-b%C3%BCscher-a92485348/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a>
+            <a href="https://equithoughts.substack.com/" target="_blank"><i class="fas fa-newspaper"></i>Substack</a>
+            <a href="#" onclick="window.location.href = 'mailto:' + ['jbuescher.university', 'gmail.com'].join('@'); return false;"><i class="fas fa-envelope"></i>Email</a>
         </div>
 
         <a href="projects.html" class="projects-link">Past Projects</a>
